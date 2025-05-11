@@ -1,7 +1,7 @@
 @echo off
 
 set CommonCompilerFlags=-MT -nologo -Gm- -GR- -EHa- -Od -Oi -WX -W4 -wd4201 -wd4100 -wd4189 -DCOPYPASTA_INTERNAL=1 -DCOPYPASTA_SLOW=1 -DCOPYPASTA_WIN32=1 -FC -Z7
-set CommonLinkerFlags= -incremental:no -opt:ref user32.lib 
+set CommonLinkerFlags= -incremental:no -opt:ref user32.lib gdi32.lib
 
 REM TODO - can we just build both with one exe?
 
